@@ -7,7 +7,7 @@ api = "0.7"
   version = "0.0.1"
 
 [[stacks]]
-  id = "io.buildpacks.stacks.jammy"
+  id = "*"
 
 [metadata]
   include-files = ["bin/run","bin/build","bin/detect","buildpack.toml"]
