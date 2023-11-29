@@ -10,5 +10,5 @@ import (
 
 func main() {
 	logger := scribe.NewEmitter(os.Stdout).WithLevel(os.Getenv("BP_LOG_LEVEL"))
-	packit.Detect(enable.Detect(logger))
+	packit.Run(enable.Detect(logger), enable.Build(logger))
 }
